@@ -1,11 +1,18 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: left;
 }
 
 /*Inicio del portfolio*/
+
+body,
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin: 0
+}
+
 
 .intro {
   display: flex;
@@ -23,10 +30,37 @@ h1 {
   color: #A9D7AD
 }
 
+
 .txtInicio {
   width: 70%;
   font-size: 20px;
+  margin-top: 20px;
 }
 
+.titCon {
+  color: #E594BB;
+  font-size: 40px;
+}
+
+.conoceme {
+  margin-top: 20%;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center; 
+  background-color: #FFF3F9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+}
+
+.titTxt {
+  font-size: 20px;
+
+}
 
 
