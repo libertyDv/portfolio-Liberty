@@ -16,7 +16,7 @@ p {
 
 .intro {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -45,16 +45,14 @@ h1 {
 .conoceme {
   margin-top: 20%;
   display: flex;
-  align-items: center; 
+  align-items: center;
   flex-direction: column;
-  justify-content: center; 
-  text-align: center; 
+  justify-content: center;
+  text-align: center;
   background-color: #FFF3F9;
-  position: absolute;
-  left: 0;
-  right: 0;
   padding-top: 40px;
   padding-bottom: 70px;
+  margin-bottom: 10%;
 
 }
 
@@ -63,4 +61,29 @@ h1 {
 
 }
 
+/*Sobre mí*/
 
+
+.sobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.imagenCirc {
+  width: 50%;
+  margin-right: 80px;
+}
+
+
+.titSobreMi {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.textSobreMi {
+  font-size: 16px;
+  line-height: 1.5;
+}

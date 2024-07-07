@@ -1,11 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import imagenInicio from './assets/imagen_inicio.png'
+import circulo from './assets/circulo.png'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -27,8 +25,21 @@ function App() {
 
 
 
+      <div className='sobreMi'>
+      <img className='imagenCirc' src={circulo} />
+      <div className='sobreMiCont'>
+      <h2 className='titSobreMi'>Sobre mí</h2>
+      <p className='textSobreMi'>Me considero una persona apasionada por la programación y todo lo que la rodea, una de mis metas siendo mejorar en esta. <br></br><br></br>
+        Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como presional.<br></br><br></br>
+         ¿Qué tal si hablamos de proyectos?
+      </p>
+      </div>
+      </div>
+
+
+
     </>
   )
 }
 
-export default App
+export default App;
