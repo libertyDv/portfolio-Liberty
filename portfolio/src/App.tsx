@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import imagenInicio from './assets/imagen_inicio.png'
 import './App.css'
 
 function App() {
@@ -8,13 +9,21 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='intro'>
+      <div className="text-content">
+        <h1>Frontend<br></br>
+          Developer</h1>
+
+          <p className='txtInicio'> ¡Hola! Soy Liberty, y mi pasión es crear proyectos frontend con gran experiencia de usuario.</p>
+      </div>
+          
+          <img className='imagenInicio' src={imagenInicio}/>
+      </div>
+
+      <div className='conoceme'>
+        <h3>Conóceme</h3>
+
+          <p>Con un poco de comunicación y pasión, un esfuerzo se convierte en un gran logro</p>
       </div>
       <h1>Vite + React</h1>
       <div className="card">
