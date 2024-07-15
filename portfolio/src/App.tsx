@@ -9,6 +9,10 @@ import figma from './assets/figma.png'
 import wordpress from './assets/wordpress.png'
 import gith from './assets/gith.png'
 import git from './assets/git.png'
+import fairy from './assets/fairy.png'
+import schedule from './assets/schedule.png'
+
+
 
 
 import './App.css'
@@ -48,16 +52,16 @@ function App() {
 
       <div className='stack'>
 
-      <h2 className='titStack'>Stack</h2>
+        <h2 className='titStack'>Stack</h2>
         <div className='parteUno'>
 
           <p className='txtUno'>Estas son las skills donde tengo más experiencia, pero actualmente las sigo reforzando y aprendiendo nuevas para así ampliar mis conocimientos. Aunque no esté relacionado con la parte de frontend, tengo experiencia usando Kotlin para desarrollar aplicaciones para Android.</p>
           <div className='iconos'>
-          <img className='reactI' src={reactIcono} />
-          <img className='javaI' src={java} />
-          <img className='jsI' src={js} />
-          <img className='htmlI' src={html} />
-          <img className='cssI' src={css} />
+            <img className='reactI' src={reactIcono} />
+            <img className='javaI' src={java} />
+            <img className='jsI' src={js} />
+            <img className='htmlI' src={html} />
+            <img className='cssI' src={css} />
           </div>
         </div>
 
@@ -66,18 +70,36 @@ function App() {
           <p className='txtDos'>También tengo experiencia usando las siguientes herramientas y plataformas, las cuales me han ayudado a la hora de realizar algun proyecto.</p>
           <div className='iconos2'>
 
-          <img className='figmaI' src={figma} />
-          <img className='wordpressI' src={wordpress} />
-          <img className='githI' src={gith} />
-          <img className='gitI' src={git} />
+            <img className='figmaI' src={figma} />
+            <img className='wordpressI' src={wordpress} />
+            <img className='githI' src={gith} />
+            <img className='gitI' src={git} />
           </div>
         </div>
       </div>
 
       <div className='proyectos'>
-      <h2 className='titProyectos'>Proyectos</h2>
+        <h2 className='titProyectos'>Proyectos</h2>
 
+        <div className='proy1'>
+
+          <img className='fairy' src={fairy} />
+          <h3 className='hproy1'>Web Fairy Dollhouse</h3>
+          <p className='pproy1'>Wordpress</p>
+        </div>
+
+
+        <div className='proy2'>
+
+          <img className='schedule' src={schedule} />
+        </div>
+        <div className='txtsProy2'>
+        <h3 className='hproy2'>Scheudle App</h3>
+        <p className='pproy2'>React</p>
+        </div>
       </div>
+
+
 
 
     </>

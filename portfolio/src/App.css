@@ -118,3 +118,52 @@ h1 {
   width: 90px;
 }
 
+/*Proyectos*/
+
+.hproy1 {
+  font-size: 45px;
+  position: relative;
+  margin-top: -390px;
+  margin-left: 35.7%;
+  color: #A9D7AD
+}
+
+.fairy {
+  margin-left: 10%;
+}
+
+.pproy1 {
+  position: relative;
+  margin-top: -40px;
+  margin-left: 1010px;
+}
+
+.proy2 {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.schedule {
+  margin-right: 10%; 
+}
+
+.hproy2 {
+  font-size: 45px;
+  position: relative;
+  margin-top: -120px;
+  margin-left: 49.8%;
+  color: #A9D7AD
+}
+
+.pproy2 {
+  position: relative;
+  margin-top: -40px;
+  margin-left: 970px;
+}
+
+
+
+
