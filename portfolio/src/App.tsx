@@ -14,6 +14,8 @@ import schedule from './assets/schedule.png'
 import bookie from './assets/bookiw.png'
 import taza from './assets/taza.png'
 import inicio from './assets/iniciop.png'
+import Header from './header';
+
 
 
 
@@ -29,6 +31,7 @@ function App() {
 
   return (
     <>
+     <Header />
       <div className='intro'>
         <div className="text-content">
           <h1>Frontend<br></br>
