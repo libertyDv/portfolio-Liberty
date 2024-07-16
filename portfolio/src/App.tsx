@@ -11,11 +11,19 @@ import gith from './assets/gith.png'
 import git from './assets/git.png'
 import fairy from './assets/fairy.png'
 import schedule from './assets/schedule.png'
+import bookie from './assets/bookiw.png'
+import taza from './assets/taza.png'
+import inicio from './assets/iniciop.png'
+
 
 
 
 
 import './App.css'
+
+const handleClick = () => {
+  alert('Botón clicado!');
+};
 
 function App() {
 
@@ -40,13 +48,14 @@ function App() {
 
 
       <div className='sobreMi'>
-        <img className='imagenCirc' src={circulo} />
+        <img className='imagenCirc' src={inicio} />
         <div className='sobreMiCont'>
           <h2 className='titSobreMi'>Sobre mí</h2>
           <p className='textSobreMi'>Me considero una persona apasionada por la programación y todo lo que la rodea, una de mis metas siendo mejorar en esta. <br></br><br></br>
             Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como presional.<br></br><br></br>
             ¿Qué tal si hablamos de proyectos?
           </p>
+          <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
         </div>
       </div>
 
@@ -85,7 +94,7 @@ function App() {
 
           <img className='fairy' src={fairy} />
           <h3 className='hproy1'>Web Fairy Dollhouse</h3>
-          <p className='pproy1'>Wordpress</p>
+
         </div>
 
 
@@ -94,9 +103,25 @@ function App() {
           <img className='schedule' src={schedule} />
         </div>
         <div className='txtsProy2'>
-        <h3 className='hproy2'>Scheudle App</h3>
-        <p className='pproy2'>React</p>
+          <h3 className='hproy2'>Schedule Web</h3>
         </div>
+      </div>
+
+      <div className='proy3'>
+
+        <img className='bookie' src={bookie} />
+      </div>
+      <div className='txtsProy3'>
+        <h3 className='hproy3'>Bookie App</h3>
+      </div>
+
+
+      <div className='contacto'>
+      <img className='taza' src={taza} />
+
+        <h2 className='titContacto'>Contacto</h2>
+        <p className='txtContacto'>¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más de guste.</p>
+        <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
       </div>
 
 
