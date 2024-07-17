@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css';
+import './footer.css';
 
 function Footer() {
     return (
@@ -10,10 +10,10 @@ function Footer() {
                     ❝La creatividad es la inteligencia divirtiéndose.❞
                     </p>
                     <div className='foot'>
-                    <a id="ftl" className="nav-link" href="#sobremi">Sobre Mi</a>
-                    <a id="ftl2" className="nav-link" href="#skills">Skills</a>
-                    <a id="ftl3" className="nav-link" href="#proyectos">Proyectos</a>
-                    <a id="ftl4" className="nav-link" href="#contacto">Contacto</a>
+                    <a id="ftl" className="nav-link" href="#sobremi">Sobre Mi</a><br></br>
+                    <a id="ftl2" className="nav-link" href="#skills">Skills</a><br></br>
+                    <a id="ftl3" className="nav-link" href="#proyectos">Proyectos</a><br></br>
+                    <a id="ftl4" className="nav-link" href="#contacto">Contacto</a><br></br>
                     </div>
 
                     <div className='imgs-footer'>

@@ -15,6 +15,7 @@ import bookie from './assets/bookiw.png'
 import taza from './assets/taza.png'
 import inicio from './assets/iniciop.png'
 import Header from './header';
+import Footer from './footer'
 import './App.css'
 import React, { useState, useEffect } from 'react';
 
@@ -176,7 +177,7 @@ function App() {
         </div>
       )}
 
-
+<Footer />
 
 
     </>

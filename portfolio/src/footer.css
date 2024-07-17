@@ -1,0 +1,32 @@
+.fot {
+    background-color: #FFF6F6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.container-footer {
+    width: 100%;
+}
+
+.imgs-footer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer {
+    margin-top: 10%;
+}
+
+.footer .nav-link {
+    text-decoration: none;
+    color: #68aa6e;
+    font-size: 18px;
+}
+
+.foot {
+    padding: 10px;
+
+    margin-top: 20px;
+    background-color: #f0d9e46e;
+}
