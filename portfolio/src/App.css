@@ -55,7 +55,7 @@ h1 {
   padding-top: 40px;
   padding-bottom: 70px;
   margin-bottom: 10%;
-  
+
 
 }
 
@@ -105,7 +105,8 @@ h1 {
   text-align: center;
 }
 
-.txtUno, .txtDos {
+.txtUno,
+.txtDos {
   width: 55%;
   margin: 0 auto;
   margin-bottom: 3%;
@@ -116,7 +117,8 @@ h1 {
   margin-top: 3%;
 }
 
-.iconos img, .iconos2 img {
+.iconos img,
+.iconos2 img {
   margin-right: 100px;
   width: 90px;
 }
@@ -143,7 +145,8 @@ h1 {
 
 
 
-.fairy, .bookie {
+.fairy,
+.bookie {
   margin-left: 10%;
 }
 
@@ -164,7 +167,7 @@ h1 {
 
 
 .schedule {
-  margin-right: 10%; 
+  margin-right: 10%;
 }
 
 .hproy2 {
@@ -196,7 +199,8 @@ h1 {
   color: #A9D7AD
 }
 
-.pproy1, .pproy3 {
+.pproy1,
+.pproy3 {
   position: relative;
   margin-top: -40px;
   margin-left: 920px;
@@ -226,7 +230,7 @@ h1 {
 }
 
 .titContacto {
-  
+
   margin-bottom: 5%;
   color: #A9D7AD;
 }
@@ -243,6 +247,75 @@ h1 {
   margin-top: 5%;
 }
 
+/*teléfono*/
 
+[class^="mensaje"] {
+  background-color: #aeddae2a;
+  margin: 5px;
+  border-radius: 7px;
+  width: 90%;
+  padding: 5px;
+}
 
+.tel {
+  position: fixed;
+  right: 0%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 1000;
+  width: 250px;
+  height: 420px;
+}
+
+#cerrarTel {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #805467;
+  display: flex;
+  justify-content: flex-end;
+  border: none;
+}
+
+.perfil {
+  display: flex;
+  background-color: #cdadbb96;
+}
+
+.fotBot {
+  width: 15%;
+}
+
+.bot {
+  margin-left: 5%;
+}
+
+.conver {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #fff #c57e9d88;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c57e9d57;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+}
+
+.textop, .textop2 {
+  border: 2px #A9D7AD solid;
+  border-radius: 22px;
+  width: 60%;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
 

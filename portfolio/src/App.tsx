@@ -15,23 +15,39 @@ import bookie from './assets/bookiw.png'
 import taza from './assets/taza.png'
 import inicio from './assets/iniciop.png'
 import Header from './header';
-
-
-
-
-
-
 import './App.css'
+import React, { useState, useEffect } from 'react';
 
-const handleClick = () => {
-  alert('Botón clicado!');
-};
+
+
 
 function App() {
 
+  const [telefonoVisible, setTelefonoVisible] = useState(false);
+  const [mensaje1Visible, setMensaje1Visible] = useState(false);
+  const [mensaje2Visible, setMensaje2Visible] = useState(false);
+
+  const handleOpcion1Click = () => {
+    setMensaje1Visible(true); // Mostrar mensaje 1
+    setMensaje2Visible(false); // Ocultar mensaje 2 si estaba visible
+  };
+
+  const handleOpcion2Click = () => {
+    setMensaje1Visible(false); // Ocultar mensaje 1 si estaba visible
+    setMensaje2Visible(true); // Mostrar mensaje 2
+  };
+
+  const handleClick = () => {
+    setTelefonoVisible(true);
+  };
+
+  const handleCloseClick = () => {
+    setTelefonoVisible(false);
+  };
+
   return (
     <>
-     <Header />
+      <Header />
       <div className='intro'>
         <div className="text-content">
           <h1>Frontend<br></br>
@@ -120,12 +136,45 @@ function App() {
 
 
       <div className='contacto'>
-      <img className='taza' src={taza} />
+        <img className='taza' src={taza} />
 
         <h2 className='titContacto'>Contacto</h2>
         <p className='txtContacto'>¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más de guste.</p>
         <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
       </div>
+
+      {telefonoVisible && (
+        <div className='containerTelefono'>
+          <div className='tel'>
+            <button id='cerrarTel' onClick={handleCloseClick} className='btnContacto'>X</button>
+            <div id='telScreen'></div>
+            <div id='telScreen'></div>
+            <div className='perfil'>
+              <img className='fotBot' src={java} alt="Java" />
+              <p className='bot'>Libby bot</p>
+            </div>
+            <div id='conver' className='conver'>
+              <div className='mensaje'>
+                <p className='bienvBot'>¡Bienvenido a mi bot y gracias por pasarte por mi portfolio! ¿En qué puedo ayudarte?</p>
+              </div>
+              <div className='opcion1' onClick={handleOpcion1Click}>
+                <p className='textop'>¡Quiero contratarte!</p>
+              </div>
+              <div className='opcion2' onClick={handleOpcion2Click} >
+                <p className='textop2'>Solo pasaba a echar un vistazo</p>
+              </div>
+              <div className='mensaje1' style={{ display: mensaje1Visible ? 'block' : 'none' }}>
+                <p className='p2'>¡Me alegro de oír eso! Aquí te dejo mi correo<br></br>
+                  <a href='mailto:liberty@libertyltm.com' className='correo'>liberty@libertyltm.com</a><br></br>
+                  ¡Nos vemos pronto!</p>
+              </div>
+              <div className='mensaje2' style={{ display: mensaje2Visible ? 'block' : 'none' }}>
+                                <p className='p3'>¡Espero que te haya gustado! Gracias por pasarte.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
 
 
