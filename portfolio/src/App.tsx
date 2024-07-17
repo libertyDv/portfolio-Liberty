@@ -146,7 +146,7 @@ function App() {
       {telefonoVisible && (
         <div className='containerTelefono'>
           <div className='tel'>
-            <button id='cerrarTel' onClick={handleCloseClick} className='btnContacto'>X</button>
+            <button id='cerrarTel' onClick={handleCloseClick} className='btnCerrar'>X</button>
             <div id='telScreen'></div>
             <div id='telScreen'></div>
             <div className='perfil'>
