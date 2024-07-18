@@ -117,9 +117,11 @@ function App() {
 
         <div className='proy1'>
 
+       
           <img className='fairy' src={fairy} />
+          <div className='txtsProy3'>
           <h3 className='hproy1'>Web Fairy Dollhouse</h3>
-
+          </div>
         </div>
 
 

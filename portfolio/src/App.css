@@ -137,23 +137,10 @@ h1 {
   color: #A9D7AD
 }
 
-.add1 {
-  position: relative;
-  margin-bottom: -260px;
-  margin-left: 43.7%;
-}
-
-
 
 .fairy,
 .bookie {
   margin-left: 10%;
-}
-
-.pproy1 {
-  position: relative;
-  margin-top: -40px;
-  margin-left: 1010px;
 }
 
 .proy2 {
@@ -163,8 +150,6 @@ h1 {
   margin-top: 20%;
   margin-left: 10%;
 }
-
-
 
 .schedule {
   margin-right: 10%;
@@ -178,18 +163,6 @@ h1 {
   color: #A9D7AD
 }
 
-.pproy2 {
-  position: relative;
-  margin-top: -40px;
-  margin-left: 970px;
-}
-
-.add2 {
-  position: relative;
-  margin-left: 61%;
-  margin-top: -10px;
-}
-
 
 .hproy3 {
   font-size: 45px;
@@ -199,15 +172,9 @@ h1 {
   color: #A9D7AD
 }
 
-.pproy1,
-.pproy3 {
-  position: relative;
-  margin-top: -40px;
-  margin-left: 920px;
-}
 
 .proy3 {
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .titProyectos {
@@ -311,7 +278,8 @@ h1 {
   }
 }
 
-.textop, .textop2 {
+.textop,
+.textop2 {
   border: 2px #A9D7AD solid;
   border-radius: 22px;
   width: 60%;
@@ -331,3 +299,111 @@ h1 {
   font-size: 24px;
 }
 
+/*responsive*/
+
+/* Estilos para pantallas extra pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {}
+
+/* Estilos para pantallas pequeñas (de 576px a 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Estilos para pantallas medianas (de 768px a 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Estilos para pantallas grandes (de 992px a 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  h1 {
+    color: #805467;
+    margin-top: 20%;
+  }
+
+  /*sobre mi*/
+  .imagenCirc {
+    width: 40%;
+    margin-right: 60px;
+  }
+
+  .sobreMi {
+    width: 80%;
+  }
+
+  .textSobreMi {
+    font-size: 16px;
+  }
+
+  /*stack*/
+
+  .txtUno,
+  .txtDos {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    font-size: 16px;
+  }
+
+  .txtDos {
+    margin-top: 3%;
+  }
+
+  .iconos img,
+  .iconos2 img {
+    width: 70px;
+
+  }
+
+  .iconos,
+  .iconos2 {
+    margin-left: 10%;
+  }
+
+  /*proyectos*/
+
+
+  .hproy1,
+  .hproy2,
+  .hproy3 {
+    font-size: 45px;
+    margin-top: 0;
+    margin-left: 0;
+    color: #A9D7AD;
+    text-align: center;
+    
+  }
+
+  .fairy,
+  .bookie,
+  .schedule {
+    margin-left: 0%;
+    margin-right: 0;
+  }
+
+  .proy2, .proy3, .proy1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 0%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+
+  .hproy1, .hproy2, .hproy3 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+
+  /*contacto*/
+
+  .contacto {
+    margin-top: 10%;
+  }
+
+
+
+}
+
+/* Estilos para pantallas extra grandes (1200px y más) */
+@media (min-width: 1200px) {}
