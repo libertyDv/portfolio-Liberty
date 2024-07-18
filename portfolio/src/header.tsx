@@ -1,17 +1,20 @@
 import React from 'react';
 import './header.css';
+import logo from './assets/logo.png'
+import { Link as ScrollLink } from 'react-scroll';
+
 
 function Header() {
     return (
         <header className="header">
-            <img src="logo.png" alt="Company Logo" className="logo" />
+            <img className='logo' src={logo} />
             <nav>
                 <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/about">Sobre mí</a></li>
-                    <li><a href="/services">Stack</a></li>
-                    <li><a href="/contact">Proyectos</a></li>
-                    <li><a href="/contact">Contacto</a></li>
+                    <li><ScrollLink to="inicio" smooth={true} duration={500}>Inicio</ScrollLink></li>
+                    <li><ScrollLink to="sobremi" smooth={true} duration={500}>Sobre mí</ScrollLink></li>
+                    <li><ScrollLink to="stack" smooth={true} duration={500}>Stack</ScrollLink></li>
+                    <li><ScrollLink to="proyectos" smooth={true} duration={500}>Proyectos</ScrollLink></li>
+                    <li><ScrollLink to="contacto" smooth={true} duration={500}>Contacto</ScrollLink></li>
                 </ul>
             </nav>
         </header>

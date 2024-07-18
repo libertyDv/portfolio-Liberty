@@ -49,6 +49,8 @@ function App() {
   return (
     <>
       <Header />
+
+      <section id='inicio'>
       <div className='intro'>
         <div className="text-content">
           <h1>Frontend<br></br>
@@ -64,9 +66,9 @@ function App() {
         <h2 className='titCon'>Conóceme</h2>
         <p className='titTxt'>Con un poco de comunicación y pasión, un esfuerzo se<br></br> convierte en un gran logro</p>
       </div>
+      </section>
 
-
-
+    <section id='sobremi'>
       <div className='sobreMi'>
         <img className='imagenCirc' src={inicio} />
         <div className='sobreMiCont'>
@@ -78,7 +80,9 @@ function App() {
           <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
         </div>
       </div>
+      </section>
 
+      <section id='stack'>
       <div className='stack'>
 
         <h2 className='titStack'>Stack</h2>
@@ -93,7 +97,6 @@ function App() {
             <img className='cssI' src={css} />
           </div>
         </div>
-
         <div className='parteDos'>
 
           <p className='txtDos'>También tengo experiencia usando las siguientes herramientas y plataformas, las cuales me han ayudado a la hora de realizar algun proyecto.</p>
@@ -106,7 +109,9 @@ function App() {
           </div>
         </div>
       </div>
+      </section>
 
+      <section id='proyectos'>
       <div className='proyectos'>
         <h2 className='titProyectos'>Proyectos</h2>
 
@@ -120,7 +125,9 @@ function App() {
 
         <div className='proy2'>
 
+        <a className='schedule' href="https://github.com/libertyDv/toDoList-React" target="_blank" >
           <img className='schedule' src={schedule} />
+          </a>
         </div>
         <div className='txtsProy2'>
           <h3 className='hproy2'>Schedule Web</h3>
@@ -128,14 +135,17 @@ function App() {
       </div>
 
       <div className='proy3'>
-
+      <a href="https://github.com/Bookie-App/Android" target="_blank">
         <img className='bookie' src={bookie} />
+        </a>
       </div>
       <div className='txtsProy3'>
         <h3 className='hproy3'>Bookie App</h3>
       </div>
 
+</section>
 
+<section id='contacto'>
       <div className='contacto'>
         <img className='taza' src={taza} />
 
@@ -176,6 +186,8 @@ function App() {
           </div>
         </div>
       )}
+
+</section>
 
 <Footer />
 

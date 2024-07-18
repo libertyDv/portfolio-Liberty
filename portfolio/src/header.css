@@ -5,19 +5,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+    
 }
 
 nav ul li a {
     color: black;
-    text-decoration: none;
+    
 }
 
 nav ul li a:hover {
     color: #A9D7AD;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 8%;
 }

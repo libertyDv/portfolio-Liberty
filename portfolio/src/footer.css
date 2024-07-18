@@ -30,3 +30,17 @@
     margin-top: 20px;
     background-color: #f0d9e46e;
 }
+
+
+.nav-link {
+    cursor: pointer;
+}
+
+.imgs-footer img {
+    width: 3%;
+    
+}
+
+.linke, .git {
+    margin-right: 30px;
+}
