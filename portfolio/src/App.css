@@ -302,13 +302,210 @@ h1 {
 /*responsive*/
 
 /* Estilos para pantallas extra pequeñas (menos de 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  h1 {
+    color: #805467;
+    margin-top: 40%;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  #root {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .txtInicio {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .imagenInicio {
+    width: 50%;
+    margin-top: 50px;
+    margin-right: -180px;
+  }
+
+  
+  /*conoceme*/
+
+  .conoceme {
+    display: flex;
+    width: 100%;
+    padding-right: 42%;
+    padding-left: 42%;
+  }
+
+
+
+  /*sobre mi*/
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px 0;
+    align-items: center;
+    justify-content: center;
+    padding-right: 42%;
+    padding-left: 42%;
+  }
+
+  .imagenCirc {
+    margin-right: 0px;
+  }
+
+  .textSobreMi {
+    font-size: 18px;
+  }
+
+  /*stack*/
+
+  .stack {
+    width: 120%;
+    margin: 0px;
+    padding-right: 33%;
+    padding-left: 33%;
+  }
+
+  .titStack {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .txtUno,
+  .txtDos {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+
+  .txtDos {
+    margin-top: 5%;
+  }
+
+  .iconos img,
+  .iconos2 img {
+    width: 46px;
+    margin-right: 5%;
+
+  }
+
+  .iconos,
+  .iconos2 {
+    margin-left: 8%;
+  }
+
+  /*proyectos*/
+
+ 
+
+  .fairy,
+  .bookie,
+  .schedule {
+    margin-left: 0%;
+    margin-right: 0;
+  }
+
+  .schedule {
+    width: 110%;
+    margin-right: 30px;
+  } 
+
+  .fairy, .bookie {
+    width: 140%;
+  }
+
+  .proy2,
+  .proy3,
+  .proy1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 0%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .proyectos,
+  .proy3 {
+    width: 100%;
+    margin-left: 130px;
+  }
+
+  .proy3 {
+    margin-left: 60px;
+  }
+
+  .hproy1,
+  .hproy2,
+  .hproy3 {
+    font-size: 40px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+
+  .hproy1 {
+    margin-bottom: 0;
+  }
+
+  .hproy3 {
+    width: 100%;
+    margin: 100px;
+    margin-top: 0px;
+    margin-left: 130px;
+  }
+
+
+  /*contacto*/
+
+  .taza {
+    width: 30%;
+    margin: 0;
+  }
+
+  .titContacto {
+    margin-top: 0;
+  }
+
+  .txtContacto {
+    width: 80%;
+    margin: 0;
+  }
+
+  .contacto {
+    margin-top: 10%;
+    margin: 0;
+    width: 100%;
+    padding-right: 135px;
+    padding-left: 135px;
+
+  }
+
+  .tel {
+    position: fixed;
+    right: -10%;
+    top: 75%;
+    padding: 20px;
+    width: 250px;
+    height: 420px;
+  }
+
+  
+}
 
 /* Estilos para pantallas pequeñas (de 576px a 767px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
   h1 {
-    color: #805467;
     margin-top: 25%;
   }
 
