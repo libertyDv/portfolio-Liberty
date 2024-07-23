@@ -361,8 +361,8 @@ h1 {
   .sobreMi {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 100px 0;
+    width: 90%;
+    margin: 100px 20px;
     align-items: center;
     justify-content: center;
   }
@@ -440,6 +440,11 @@ h1 {
     flex-direction: column;
   }
 
+  .titProyectos {
+    font-size: 30px;
+  }
+
+
   .proyectos,
   .proy3 {
     width: 100%;
@@ -449,7 +454,7 @@ h1 {
   .hproy1,
   .hproy2,
   .hproy3 {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 0;
     text-align: center;
     width: 100%;
@@ -493,11 +498,11 @@ h1 {
 
   .tel {
     position: fixed;
-    right: -10%;
-    top: 75%;
+    right: -28%;
+    top: 65%;
     padding: 20px;
     width: 250px;
-    height: 420px;
+    height: 460px;
   }
 
   
@@ -612,6 +617,7 @@ h1 {
 
   }
 
+  
 
 
   .fairy,

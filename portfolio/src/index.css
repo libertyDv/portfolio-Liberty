@@ -48,6 +48,10 @@ button:hover {
 
 
 
-@media (prefers-color-scheme: light) {
- 
+@media (max-width: 575.98px) { 
+  button {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
+
 }
