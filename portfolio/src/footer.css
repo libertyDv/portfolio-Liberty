@@ -72,22 +72,20 @@
 @media (max-width: 575.98px) { 
     .fot {
         width: 100%;
-        padding-right: 135px;
-        padding-left: 135px;
     }
 
-    .foot {
-        padding-right: 85px;
-        padding-left: 100px;
-    }
-
+  
     .imgs-footer img {
         width: 10%;
     
     }
 
     .correo {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    #ftl, #ftl2, #stack, #ftl3, #ftl4 {
+        font-size: 16px;
     }
 
 }

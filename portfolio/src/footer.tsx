@@ -1,4 +1,3 @@
-import React from 'react';
 import linke from './assets/lin.png'
 import git from './assets/gi.png'
 import cv from './assets/cv.png'

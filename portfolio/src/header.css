@@ -83,4 +83,12 @@ nav ul li a:hover {
         display: block;
         margin: 10px 0;
     }
+
+    
+}
+
+@media (max-width: 575.98px) { 
+    .cont {
+        margin-right: 0px;
+    }
 }

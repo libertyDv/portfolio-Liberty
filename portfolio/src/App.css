@@ -303,9 +303,12 @@ h1 {
 
 /* Estilos para pantallas extra pequeñas (menos de 576px) */
 @media (max-width: 575.98px) {
-  h1 {
+  .h1F {
     color: #805467;
     margin-top: 40%;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 15%;
   }
 
   .intro {
@@ -313,22 +316,26 @@ h1 {
     align-items: center;
     justify-content: space-around;
     margin: 0;
+    width: 70%;
   }
 
   #root {
     margin: 0 auto;
     text-align: center;
+    width: 100%;
   }
 
   .txtInicio {
-    margin-left: 5%;
-    width: 90%;
+    margin-left: 15%;
+    width: 80%;
+    font-size: 14px;
+    text-align: left;
   }
 
   .imagenInicio {
     width: 50%;
     margin-top: 50px;
-    margin-right: -180px;
+    margin-right: -100px;
   }
 
   
@@ -337,10 +344,16 @@ h1 {
   .conoceme {
     display: flex;
     width: 100%;
-    padding-right: 42%;
-    padding-left: 42%;
+    
   }
 
+  .titCon, .titSobreMi, .titStack, .titContacto {
+    font-size: 30px;
+  }
+  
+  .titTxt {
+    font-size: 16px;
+  }
 
 
   /*sobre mi*/
@@ -352,25 +365,21 @@ h1 {
     margin: 100px 0;
     align-items: center;
     justify-content: center;
-    padding-right: 42%;
-    padding-left: 42%;
   }
 
   .imagenCirc {
     margin-right: 0px;
   }
 
-  .textSobreMi {
-    font-size: 18px;
+  .textSobreMi, .txtUno, .txtDos {
+    font-size: 14px;
   }
 
   /*stack*/
 
   .stack {
-    width: 120%;
+    width: 100%;
     margin: 0px;
-    padding-right: 33%;
-    padding-left: 33%;
   }
 
   .titStack {
@@ -380,7 +389,7 @@ h1 {
 
   .txtUno,
   .txtDos {
-    width: 100%;
+    width: 80%;
     margin-bottom: 3%;
   }
 
@@ -390,7 +399,7 @@ h1 {
 
   .iconos img,
   .iconos2 img {
-    width: 46px;
+    width: 35px;
     margin-right: 5%;
 
   }
@@ -412,12 +421,11 @@ h1 {
   }
 
   .schedule {
-    width: 110%;
-    margin-right: 30px;
+    width: 90%;
   } 
 
   .fairy, .bookie {
-    width: 140%;
+    width: 80%;
   }
 
   .proy2,
@@ -435,17 +443,13 @@ h1 {
   .proyectos,
   .proy3 {
     width: 100%;
-    margin-left: 130px;
   }
 
-  .proy3 {
-    margin-left: 60px;
-  }
-
+ 
   .hproy1,
   .hproy2,
   .hproy3 {
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 0;
     text-align: center;
     width: 100%;
@@ -459,16 +463,14 @@ h1 {
 
   .hproy3 {
     width: 100%;
-    margin: 100px;
     margin-top: 0px;
-    margin-left: 130px;
   }
 
 
   /*contacto*/
 
   .taza {
-    width: 30%;
+    width: 20%;
     margin: 0;
   }
 
@@ -477,16 +479,15 @@ h1 {
   }
 
   .txtContacto {
-    width: 80%;
+    width: 70%;
     margin: 0;
+    font-size: 14px;
   }
 
   .contacto {
     margin-top: 10%;
     margin: 0;
     width: 100%;
-    padding-right: 135px;
-    padding-left: 135px;
 
   }
 
