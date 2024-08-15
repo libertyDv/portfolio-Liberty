@@ -55,6 +55,13 @@ nav ul li a:hover {
     padding: 5px 25px;
 }
 
+@media (max-width: 575.98px) { 
+
+    .logo {
+        width: 20%;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;

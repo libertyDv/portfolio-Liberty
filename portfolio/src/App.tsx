@@ -9,15 +9,17 @@ import wordpress from './assets/wordpress.png'
 import gith from './assets/gith.png'
 import git from './assets/git.png'
 import fairy from './assets/fairy.png'
-import schedule from './assets/schedule.png'
+import faeMood from './assets/faeMood.png'
 import bookie from './assets/bookiw.png'
 import taza from './assets/taza.png'
 import inicio from './assets/iniciop.png'
 import Header from './header';
 import Footer from './footer'
+
 import './App.css'
 import { useState } from 'react';
 import { Helmet } from "react-helmet";  
+import logo from './assets/lt.png';
 
 
 
@@ -79,7 +81,7 @@ function App() {
           <div className='sobreMiCont'>
             <h2 className='titSobreMi'>Sobre mí</h2>
             <p className='textSobreMi'>Me considero una persona apasionada por la programación y todo lo que la rodea, una de mis metas siendo mejorar en esta. <br></br><br></br>
-              Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como presional.<br></br><br></br>
+              Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como personal.<br></br><br></br>
               ¿Qué tal si hablamos de proyectos?
             </p>
             <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
@@ -93,7 +95,7 @@ function App() {
           <h2 className='titStack'>Stack</h2>
           <div className='parteUno'>
 
-            <p className='txtUno'>Estas son las skills donde tengo más experiencia, pero actualmente las sigo reforzando y aprendiendo nuevas para así ampliar mis conocimientos. Aunque no esté relacionado con la parte de frontend, tengo experiencia usando Kotlin para desarrollar aplicaciones para Android.</p>
+            <p className='txtUno'>Estas son las skills donde tengo más experiencia, pero actualmente me encuentro aprendiendo nuevas para así ampliar mis conocimientos. Aunque no esté relacionado con la parte de frontend, tengo experiencia usando Kotlin para desarrollar aplicaciones para Android.</p>
             <div className='iconos'>
               <img className='reactI' src={reactIcono} />
               <img className='javaI' src={java} />
@@ -132,17 +134,17 @@ function App() {
 
           <div className='proy2'>
 
-            <a className='schedule' href="https://github.com/libertyDv/toDoList-React" target="_blank" >
-              <img className='schedule' src={schedule} />
+            <a className='schedule' href="https://github.com/libertyDv/faeMood" target="_blank" rel="noopener noreferrer">
+              <img className='schedule' src={faeMood} />
             </a>
           </div>
           <div className='txtsProy2'>
-            <h3 className='hproy2'>Schedule Web</h3>
+            <h3 className='hproy2'>FaeMood</h3>
           </div>
         </div>
 
         <div className='proy3'>
-          <a href="https://github.com/Bookie-App/Android" target="_blank">
+          <a href="https://github.com/Bookie-App/Android" target="_blank" rel="noopener noreferrer">
             <img className='bookie' src={bookie} />
           </a>
         </div>
@@ -157,7 +159,7 @@ function App() {
           <img className='taza' src={taza} />
 
           <h2 className='titContacto'>Contacto</h2>
-          <p className='txtContacto'>¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más de guste.</p>
+          <p className='txtContacto'>¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más te guste.</p>
           <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
         </div>
 
@@ -168,7 +170,7 @@ function App() {
               <div id='telScreen'></div>
               <div id='telScreen'></div>
               <div className='perfil'>
-                <img className='fotBot' src={java} alt="Java" />
+                <img className='fotBot' src={logo} alt="Java" />
                 <p className='bot'>Libby bot</p>
               </div>
               <div id='conver' className='conver'>

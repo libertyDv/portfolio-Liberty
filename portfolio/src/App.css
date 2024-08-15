@@ -304,7 +304,6 @@ h1 {
 /* Estilos para pantallas extra pequeñas (menos de 576px) */
 @media (max-width: 575.98px) {
   .h1F {
-    color: #805467;
     margin-top: 40%;
     font-size: 35px;
     text-align: left;
@@ -498,10 +497,10 @@ h1 {
 
   .tel {
     position: fixed;
-    right: -28%;
+    right: -33%;
     top: 65%;
     padding: 20px;
-    width: 250px;
+    width: 240px;
     height: 460px;
   }
 

@@ -24,15 +24,15 @@ function Footer() {
                     </div>
 
                     <div className='imgs-footer'>
-                        <a className='linke' href="https://www.linkedin.com/in/liberty-tamayo-05b086252/" target="_blank" >
+                        <a className='linke' href="https://www.linkedin.com/in/liberty-tamayo-05b086252/" target="_blank" rel="noopener noreferrer" >
                             <img className='linke' src={linke} />
                         </a>
 
-                        <a className='git' href="https://github.com/libertyDv" target="_blank" >
+                        <a className='git' href="https://github.com/libertyDv" target="_blank" rel="noopener noreferrer">
                             <img className='git' src={git} />
                         </a>
 
-                        <a className='cv' href="https://github.com/libertyDv" target="_blank" >
+                        <a className='cv' href="/cv/LibertyTamCV.pdf" target="_blank" rel="noopener noreferrer">
                             <img className='cv' src={cv} />
                         </a>
                     
