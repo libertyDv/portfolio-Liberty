@@ -13,6 +13,7 @@ import faeMood from './assets/faeMood.png'
 import bookie from './assets/bookiw.png'
 import taza from './assets/taza.png'
 import inicio from './assets/iniciop.png'
+import beans from './assets/beans.png'
 import Header from './header';
 import Footer from './footer'
 
@@ -151,6 +152,18 @@ function App() {
         <div className='txtsProy3'>
           <h3 className='hproy3'>Bookie App</h3>
         </div>
+
+        <div className='proy2'>
+
+            <a className='schedule' href="https://github.com/libertyDv/faeMood" target="_blank" rel="noopener noreferrer">
+              <img className='schedule' src={beans} />
+            </a>
+          </div>
+          <div className='txtsProy2'>
+            <h3 className='hproy2'>Beans</h3>
+          </div>
+
+        
 
       </section>
 
