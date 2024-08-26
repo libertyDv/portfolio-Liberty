@@ -21,12 +21,14 @@ import './App.css'
 import { useState } from 'react';
 import { Helmet } from "react-helmet";  
 import logo from './assets/lt.png';
+import { useTranslation } from 'react-i18next';
 
 
 
 
 function App() {
 
+  const { t } = useTranslation();
   const [telefonoVisible, setTelefonoVisible] = useState(false);
   const [mensaje1Visible, setMensaje1Visible] = useState(false);
   const [mensaje2Visible, setMensaje2Visible] = useState(false);
@@ -49,6 +51,7 @@ function App() {
     setTelefonoVisible(false);
   };
 
+
   return (
     <>
 
@@ -56,7 +59,13 @@ function App() {
         <title>Liberty</title> 
         <meta name="description" content="Portfolio" />
       </Helmet>
+     
       <Header />
+
+      <div className="language-selector">
+        <button onClick={() => changeLanguage('es')}>Español</button>
+        <button onClick={() => changeLanguage('en')}>English</button>
+      </div>
 
       <section id='inicio'>
         <div className='intro'>
@@ -64,15 +73,15 @@ function App() {
             <h1 className='h1F'>Frontend<br></br>
               Developer</h1>
 
-            <p className='txtInicio'> ¡Hola! Soy Liberty, y mi pasión es crear proyectos frontend con gran experiencia de usuario.</p>
+            <p className='txtInicio'> {t('hola')}</p>
           </div>
 
           <img className='imagenInicio' src={imagenInicio} />
         </div>
 
         <div className='conoceme'>
-          <h2 className='titCon'>Conóceme</h2>
-          <p className='titTxt'>Con un poco de comunicación y pasión, un esfuerzo se<br></br> convierte en un gran logro</p>
+          <h2 className='titCon'>{t('conoceme')}</h2>
+          <p className='titTxt'>{t('conoceme_text')}</p>
         </div>
       </section>
 
@@ -80,12 +89,10 @@ function App() {
         <div className='sobreMi'>
           <img className='imagenCirc' src={inicio} />
           <div className='sobreMiCont'>
-            <h2 className='titSobreMi'>Sobre mí</h2>
-            <p className='textSobreMi'>Me considero una persona apasionada por la programación y todo lo que la rodea, una de mis metas siendo mejorar en esta. <br></br><br></br>
-              Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como personal.<br></br><br></br>
-              ¿Qué tal si hablamos de proyectos?
+            <h2 className='titSobreMi'>{t('sobre_mi')}</h2>
+            <p className='textSobreMi'>{t('sobre_mi_texto')}
             </p>
-            <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
+            <button onClick={handleClick} className="btnContacto">{t('btn_sonbremi')}</button>
           </div>
         </div>
       </section>
@@ -96,7 +103,7 @@ function App() {
           <h2 className='titStack'>Stack</h2>
           <div className='parteUno'>
 
-            <p className='txtUno'>Estas son las skills donde tengo más experiencia, pero actualmente me encuentro aprendiendo nuevas para así ampliar mis conocimientos. Aunque no esté relacionado con la parte de frontend, tengo experiencia usando Kotlin para desarrollar aplicaciones para Android.</p>
+            <p className='txtUno'>{t('stack')}</p>
             <div className='iconos'>
               <img className='reactI' src={reactIcono} />
               <img className='javaI' src={java} />
@@ -107,7 +114,7 @@ function App() {
           </div>
           <div className='parteDos'>
 
-            <p className='txtDos'>También tengo experiencia usando las siguientes herramientas y plataformas, las cuales me han ayudado a la hora de realizar algun proyecto.</p>
+            <p className='txtDos'>{t('stack2')}</p>
             <div className='iconos2'>
 
               <img className='figmaI' src={figma} />
@@ -121,7 +128,7 @@ function App() {
 
       <section id='proyectos'>
         <div className='proyectos'>
-          <h2 className='titProyectos'>Proyectos</h2>
+          <h2 className='titProyectos'>{t('proyectos')}</h2>
 
           <div className='proy1'>
 
@@ -155,7 +162,7 @@ function App() {
 
         <div className='proy2'>
 
-            <a className='schedule' href="https://github.com/libertyDv/faeMood" target="_blank" rel="noopener noreferrer">
+            <a className='schedule' href="https://github.com/libertyDv/beans-api" target="_blank" rel="noopener noreferrer">
               <img className='schedule' src={beans} />
             </a>
           </div>
@@ -171,9 +178,9 @@ function App() {
         <div className='contacto'>
           <img className='taza' src={taza} />
 
-          <h2 className='titContacto'>Contacto</h2>
-          <p className='txtContacto'>¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más te guste.</p>
-          <button onClick={handleClick} className="btnContacto">Enviar mensaje</button>
+          <h2 className='titContacto'>{t('contacto')}</h2>
+          <p className='txtContacto'>{t('contacto_texto')}</p>
+          <button onClick={handleClick} className="btnContacto">{t('btn_sonbremi')}</button>
         </div>
 
         {telefonoVisible && (
@@ -188,21 +195,20 @@ function App() {
               </div>
               <div id='conver' className='conver'>
                 <div className='mensaje'>
-                  <p className='bienvBot'>¡Bienvenido a mi bot y gracias por pasarte por mi portfolio! ¿En qué puedo ayudarte?</p>
+                  <p className='bienvBot'>{t('bot_bienvenida')}</p>
                 </div>
                 <div className='opcion1' onClick={handleOpcion1Click}>
-                  <p className='textop'>¡Quiero contratarte!</p>
+                  <p className='textop'>{t('quiero_contratarte')}</p>
                 </div>
                 <div className='opcion2' onClick={handleOpcion2Click} >
-                  <p className='textop2'>Solo pasaba a echar un vistazo</p>
+                  <p className='textop2'>{t('solo_vistazo')}</p>
                 </div>
                 <div className='mensaje1' style={{ display: mensaje1Visible ? 'block' : 'none' }}>
-                  <p className='p2'>¡Me alegro de oír eso! Aquí te dejo mi correo<br></br>
-                    <a href='mailto:liberty@libertyltm.com' className='correo'>liberty@libertyltm.com</a><br></br>
-                    ¡Nos vemos pronto!</p>
+                <p className='p2' dangerouslySetInnerHTML={{ __html: t('contratarte') }}></p>
+                  
                 </div>
                 <div className='mensaje2' style={{ display: mensaje2Visible ? 'block' : 'none' }}>
-                  <p className='p3'>¡Espero que te haya gustado! Gracias por pasarte.</p>
+                  <p className='p3'>{t('gustado')}</p>
                 </div>
               </div>
             </div>

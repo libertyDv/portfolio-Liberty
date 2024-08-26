@@ -1,0 +1,23 @@
+{
+    "frontend_developer": "Frontend Developer",
+    "hola": "Hello! I'm Liberty, and my passion is creating frontend projects with great user experience.",
+    "conoceme": "Get to Know Me",
+    "conoceme_text": "With a bit of comunication and passion, an effort becomes a great achievement.",
+    "sobre_mi": "About me",
+    "sobre_mi_texto": "I consider myself an passionate about programming and everything surrounding it, with one of my great goals being improve in it. Additionally, I am creative and curious, always seeking challenges that allow me to grow both professionally and personally. Let's talk about projects!",
+    "btn_sonbremi": "Send message",
+    "stack": "These are the skills i have the most experience with, but currently I am learning new ones to expand my knowledge. Although it's not related to frontend development, I have experience building Android applications with Kotlin.",
+    "stack2": "I also have experience using the following plataforms and tools, which have helped me when working on various projects.",
+    "proyectos": "Proyects",
+    "contacto": "Contact",
+    "contacto_texto": "How about you send a message to my bot and we get in touch to talk about great ideas? Don't forget the coffe! Or tea, whatever yoy prefer.",
+    "quiero_contratarte": "I want to hire you!",
+    "solo_vistazo": "I was just looking",
+    "text_footer": "❝Creativity is intelligence having fun.❞",
+    "label_inicio": "Home",
+    "label_proyectos": "Proyects",
+    "label_contacto": "Contact",
+    "bot_bienvenida": "Welcome to my bot and thank you for visiting my portfolio! How can i assist you?",
+    "gustado": "I hope you liked it! Thank you for visiting.",
+    "contratarte": "I am so happy to hear that! Here's my email <a href='mailto:liberty@libertyltm.com' class='correo'> liberty@libertyltm.com </a> Talk soon!"
+}

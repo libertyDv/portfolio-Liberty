@@ -1,0 +1,22 @@
+{
+    "frontend_developer": "Frontend Developer",
+    "hola": "¡Hola! Soy Liberty, y mi pasión es crear proyectos frontend con gran experiencia de usuario.",
+    "conoceme": "Conóceme",
+    "conoceme_text": "Con un poco de comunicación y pasión, un esfuerzo se convierte en un gran logro",
+    "sobre_mi": "Sobre mí",
+    "sobre_mi_texto": "Me considero una persona apasionada por la programación y todo lo que la rodea, una de mis metas siendo mejorar en esta. Además, soy creativa y curiosa, siempre buscando desafíos que me permitan crecer tanto a nivel profesional como personal. ¿Qué tal si hablamos de proyectos?",
+    "btn_sonbremi": "Enviar mensaje",
+    "stack": "Estas son las skills donde tengo más experiencia, pero actualmente me encuentro aprendiendo nuevas para así ampliar mis conocimientos. Aunque no esté relacionado con la parte de frontend, tengo experiencia usando Kotlin para desarrollar aplicaciones para Android.",
+    "stack2": "También tengo experiencia usando las siguientes herramientas y plataformas, las cuales me han ayudado a la hora de realizar algun proyecto.",
+    "proyectos": "Proyectos",
+    "contacto": "Contacto",
+    "contacto_texto": "¿Qué tal si le mandas un mensaje a mi bot y nos ponemos en contacto para hablar de grandes ideas? ¡No te olvides del café! O té, lo que más te guste.",
+    "quiero_contratarte": "¡Quiero contratarte!",
+    "solo_vistazo": "Solo pasaba a echar un vistazo",
+    "text_footer": "❝La creatividad es la inteligencia divirtiéndose.❞",
+    "label_inicio": "Inicio",
+    "label_proyectos": "Proyectos",
+    "bot_bienvenida": "¡Bienvenido a mi bot y gracias por pasarte por mi portfolio! ¿En qué puedo ayudarte?",
+    "gustado": "¡Espero que te haya gustado! Gracias por pasarte.",
+    "contratarte": "¡Me alegro de oír eso! Aquí te dejo mi correo <a href='mailto:liberty@libertyltm.com' class='correo'> liberty@libertyltm.com </a>¡Nos vemos pronto!"
+}

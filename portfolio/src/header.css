@@ -55,14 +55,43 @@ nav ul li a:hover {
     padding: 5px 25px;
 }
 
+
+
+.languageSelector {
+    margin-right: 40px;
+}
+
+.languageIcon {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
 @media (max-width: 575.98px) { 
 
     .logo {
         width: 20%;
     }
+
+    .languageIcon {
+        margin: 0px 10px;
+    }
+
+    .languageSelector {
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .languageIcon {
+        margin: 0px 10px;
+    }
+
+    .languageSelector {
+        margin-right: 0px;
+        padding-bottom: 10px;
+    }
     .menu-toggle {
         display: block;
     }
