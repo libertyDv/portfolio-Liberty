@@ -62,11 +62,6 @@ function App() {
      
       <Header />
 
-      <div className="language-selector">
-        <button onClick={() => changeLanguage('es')}>Español</button>
-        <button onClick={() => changeLanguage('en')}>English</button>
-      </div>
-
       <section id='inicio'>
         <div className='intro'>
           <div className="text-content">

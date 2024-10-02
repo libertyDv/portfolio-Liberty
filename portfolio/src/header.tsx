@@ -9,7 +9,6 @@ import esp from './assets/esp.png'
 
 
 
-
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,7 +18,7 @@ function Header() {
         setMenuOpen(!menuOpen);
     };
 
-    const changeLanguage = (lng) => {
+    const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
     };
 
@@ -33,32 +32,28 @@ function Header() {
                 <ul>
                     <li><ScrollLink to="inicio" smooth={true} duration={500}>{t('label_inicio')}</ScrollLink></li>
                     <li><ScrollLink to="sobremi" smooth={true} duration={500}>{t('sobre_mi')}</ScrollLink></li>
-                    <li><ScrollLink to="stack" smooth={true} duration={500}>{t('contacto')}</ScrollLink></li>
+                    <li><ScrollLink to="stack" smooth={true} duration={500}>Stack</ScrollLink></li>
                     <li><ScrollLink to="proyectos" smooth={true} duration={500}>{t('proyectos')}</ScrollLink></li>
                     <li><ScrollLink to="contacto" smooth={true} duration={500} className="cont">{t('contacto')}</ScrollLink></li>
 
                     <div className="languageSelector">
-                        <img 
-                        src={esp} 
-                        alt="English" 
-                        className="languageIcon" 
-                        width='25px'
-                        onClick={() => changeLanguage('es')} 
-                    />
-                        <img 
-                        src={eng} 
-                        alt="Englishg" 
-                        className="languageIcon" 
-                        width='25px'
-                        onClick={() => changeLanguage('en')} 
-                    />
+                        <img
+                            src={esp}
+                            alt="English"
+                            className="languageIcon"
+                            width='25px'
+                            onClick={() => changeLanguage('es')}
+                        />
+                        <img
+                            src={eng}
+                            alt="Englishg"
+                            className="languageIcon"
+                            width='25px'
+                            onClick={() => changeLanguage('en')}
+                        />
                     </div>
-                   
                 </ul>
-            
             </nav>
-
-            
         </header>
     );
 }
